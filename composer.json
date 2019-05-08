@@ -13,11 +13,11 @@
   "require": {
     "php": "^7.1.3",
     "zarinpal/zarinpal": "^1.3",
-    "alaatv/payment-gateways" : "*"
+    "alaatv/payment-gateways" : "dev-master"
   },
   "autoload": {
     "psr-4": {
-      "AlaaTV\\Gateways\\": "src"
+      "AlaaTV\\ZarinpalGatewayDriver\\": "src"
     }
   },
   "extra": {

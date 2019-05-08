@@ -2,7 +2,6 @@
 
 namespace AlaaTV\ZarinpalGatewayDriver;
 
-use AlaaTV\Gateways\PaymentDriver;
 use Illuminate\Support\ServiceProvider;
 use Zarinpal\Zarinpal;
 
