@@ -11,7 +11,7 @@ class ZarinpalGateWay implements OnlineGateway
     {
         $zarinpalResponse = resolve('zarinpal.client')->request($callbackUrl, $cost->tomans(), $description);
 
-        return nullable($zarinpalResponse['Authority'] ?? null);
+        return $zarinpalResponse['Authority'] ?? null;
     }
     
     public function getAuthorityValue(): string
