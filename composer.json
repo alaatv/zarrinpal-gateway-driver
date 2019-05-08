@@ -23,7 +23,7 @@
   "extra": {
     "laravel": {
       "providers": [
-        "AlaaTV\\GatewayDrivers\\ZarinpalServiceProvider"
+        "AlaaTV\\ZarinpalGatewayDriver\\ZarinpalServiceProvider"
       ]
     }
   }
