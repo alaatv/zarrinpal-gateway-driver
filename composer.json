@@ -13,7 +13,7 @@
   "require": {
     "php": "^7.1.3",
     "zarinpal/zarinpal": "^1.3",
-    "alaatv/payment-gateways" : "dev-master"
+    "alaatv/payment-gateways" : "1.*"
   },
   "autoload": {
     "psr-4": {
