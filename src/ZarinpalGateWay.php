@@ -2,9 +2,7 @@
 
 namespace AlaaTV\ZarinpalGatewayDriver;
 
-use AlaaTV\Gateways\Contracts\IranianCurrency;
-use AlaaTV\Gateways\Contracts\OnlineGateway;
-use AlaaTV\Gateways\Contracts\OnlinePaymentVerificationResponseInterface;
+use AlaaTV\Gateways\Contracts\{IranianCurrency, OnlineGateway, OnlinePaymentVerificationResponseInterface};
 use AlaaTV\Gateways\RedirectData;
 
 class ZarinpalGateWay implements OnlineGateway
@@ -18,7 +16,7 @@ class ZarinpalGateWay implements OnlineGateway
     
     public function getAuthorityValue(): string
     {
-        return $request['Authority'] ?? '';
+        return request('Authority',  '');
     }
     
     public function generatePaymentPageUriObject($refId): RedirectData
