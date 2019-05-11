@@ -18,7 +18,7 @@ class ZarinpalServiceProvider extends ServiceProvider
 
         $this->app['zarinpal.isSandBox'] = $this->isZarinpalSandboxOn();
 
-        PaymentDriver::addDriver('zarinpal', ZarinpalGateWay::class, 1);
+        PaymentDriver::addDriver('zarinpal', ZarinpalGateWay::class);
     }
     
     /**
