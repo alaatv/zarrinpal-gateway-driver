@@ -19,7 +19,7 @@ class ZarinpalGateWay implements OnlineGateway
         return request('Authority',  '');
     }
     
-    public function generatePaymentPageUriObject($refId): RedirectData
+    public function generatePaymentPageUriObject($refId , $mobile): RedirectData
     {
         $url = app('zarinpal.client')->redirectUrl();
 
